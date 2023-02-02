@@ -107,13 +107,14 @@ void setup()
 void loop()
 {
 
-  while (GPS_Serial.available() > 0)
-    if (gps.encode(GPS_Serial.read()))
-      displayGPSInfo();
+  // while (GPS_Serial.available() > 0)
+  //   if (gps.encode(GPS_Serial.read()))
+  //     displayGPSInfo();
 
-  if (millis() > 5000 && gps.charsProcessed() < 10)
-  {
-    Serial.println(F("No GPS detected: check wiring."));
-  }
+  // if (millis() > 5000 && gps.charsProcessed() < 10)
+  // {
+  //   Serial.println(F("No GPS detected: check wiring."));
+  // }
   displayValue();
+  delay(1000);
 }

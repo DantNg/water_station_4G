@@ -42,8 +42,8 @@ void TDS_Setup(int sensorPin){
   //Serial.begin(115200);
   pinMode(sensorPin, INPUT);
   gravityTds.setPin(sensorPin);
-  gravityTds.setAref(5.0);  //reference voltage on ADC, default 5.0V on Arduino UNO
-  gravityTds.setAdcRange(1024);  //1024 for 10bit ADC;4096 for 12bit ADC
+  gravityTds.setAref(3.3);  //reference voltage on ADC, default 5.0V on Arduino UNO
+  gravityTds.setAdcRange(4096);  //1024 for 10bit ADC;4096 for 12bit ADC
   gravityTds.begin();  //initialization
 
 }
