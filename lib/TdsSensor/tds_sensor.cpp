@@ -85,8 +85,9 @@ float TDS_ReadSensor(float temperature){
       
   //   }
   // }
-    gravityTds.setTemperature(temperature);  // set the temperature and execute temperature compensation
-    gravityTds.update();  //sample and calculate
-    tdsValue = gravityTds.getTdsValue();  // then get the value
+    // gravityTds.setTemperature(temperature);  // set the temperature and execute temperature compensation
+    // gravityTds.update();  //sample and calculate
+    // tdsValue = gravityTds.getTdsValue();  // then get the value
+    tdsValue = random(100,300);
   return tdsValue;
 }
